@@ -1,0 +1,118 @@
+.bg-grey {
+    background-color: #f0ece7;
+}
+.bg-brown {
+    background-color: rosybrown;
+}
+.bg-chocolate {
+    background-color: #5f2c3d;
+}
+h1,h2, h3, h4, h5, h6 {
+    font-family: 'Lobster Two', cursive;
+}
+p {
+    font-family: 'Lato', sans-serif;
+}
+.app {
+    width: 100vw;
+    height: 100vh;
+}
+.content {
+    width: 80%;
+    margin: 0 auto;
+    padding-left: 5%;
+    padding-right: 5%;
+}
+.highlighted {
+    color: rosybrown;
+}
+
+/**
+ * 
+ * Navbar and headline
+ * 
+ */
+.logo {
+    font-family: 'Uncial Antiqua', cursive;
+    font-size: 2rem;
+}
+.navbar {
+    width: 100%;
+    padding-left: 10%;
+    padding-right: 10%;
+}
+.underline {
+    width: 10%;
+    border-width: 5px;
+    border-color: rosybrown;
+}
+.filter-btn {
+    color: rosybrown;
+    border-color: rosybrown;
+    margin-top: 10px;
+}
+.filter-btn:hover {
+    color: white;
+    background-color: rosybrown;
+}
+
+/**
+ * 
+ * MENU ITEMS
+ * 
+ */
+.img {
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 300px;
+    width: 100%;
+    border: 3px solid rosybrown;
+    border-radius: 5px;
+}
+.img-link {
+    background-image: url(image/iced_coffee.jpeg);
+}
+.item-title {
+    font-size: 1.5rem !important;
+    font-weight: 700;
+}
+.item-price {
+    color: rosybrown;
+}
+.item-info > hr {
+    margin: 0;
+}
+
+
+/**
+ * 
+ * Media Queries
+ * 
+ */
+
+/* 
+Extra small devices (portrait phones, less than 576px) 
+No media query since this is the default in Bootstrap because it is "mobile first"
+*/
+
+/* Small devices (landscape phones, 576px and up) */
+@media (min-width: 576px) {  
+ 
+}
+ 
+/* Medium devices (tablets, 768px and up) The navbar toggle appears at this breakpoint */
+@media (min-width: 768px) {  
+
+}
+ 
+/* Large devices (desktops, 992px and up) */
+@media (min-width: 992px) { 
+ .img {
+     height: 150px;
+ }
+}
+ 
+/* Extra large devices (large desktops, 1200px and up) */
+@media (min-width: 1200px) {  
+    
+}
