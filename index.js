@@ -28,10 +28,8 @@ function fillMenu() {
         menu.append(
             `<div class="col-sm-12 col-xl-6 menu-item mt-4" id="${item.type}">
                 <div class="row menu_item_inner">
-                    <div class="col-sm-12 col-lg-5 fill">
-                        <img src="image/${item.imageName}" class="img-rounded">
-                    </div>
-                    <div class="col-sm-12 col-lg-7 item-info">
+                    <div class="col-sm-12 col-md-5 mb-3 item-img" style="background-image: url(image/${item.imageName})"></div>
+                    <div class="col-sm-12 col-md-7 item-info">
                         <div class="d-flex">
                             <h5 class="item-title">${item.name}</h5>
                             <h5 class="item-price ml-auto">${item.price}</h5>
@@ -44,6 +42,7 @@ function fillMenu() {
         )
     });
 }
+
 
 
 $(document).ready(() => {
