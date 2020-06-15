@@ -1,18 +1,81 @@
 const Menu = [
     {
         name : "Iced Coffee",
-        price : "$5",
+        price : "$4",
         imageName : "iced_coffee.jpeg",
         type : "iced",
         desc : "Deliciously brewed chilled coffee made with authentic Columbian roasted coffee beans"
     },
     {
         name : "Capuccino",
-        price : "$6.5",
+        price : "$5.25",
         imageName : "capuccino.jpeg",
         type : "hot",
         desc : "Creamy, delicious drink prepared with double espresso, hot milk, and steamed milk foam on top"
-    }
+    },
+    {
+        name : "Iced Vanilla Latte",
+        price : "$5.25",
+        imageName : "iced_vanilla_latte.jpg",
+        type : "iced",
+        desc : "Freshly brewed coffee mixed with steamed full-fat milk and mixed with vanilla essence"
+    },
+    {
+        name : "Iced Raspberry Tea",
+        price : "$4.50",
+        imageName : "iced_raspberry_tea.jpg",
+        type : "iced",
+        desc : "Freshly picked sweet raspberry infused in cold green tea"
+    },
+    {
+        name : "One-shot Espresso",
+        price : "$3.25",
+        imageName : "espresso.jpeg",
+        type : "hot",
+        desc : "Made with imported Italian coffee beans"
+    },
+    {
+        name : "Chai Latte",
+        price : "$5.50",
+        imageName : "chai_latte.jpeg",
+        type : "hot",
+        desc : "Brewed with authentic Indian spices and herbs. Mixed with steamed full-fat milk and topped with cinnamon powder"
+    },
+    {
+        name : "Caramel Macchiato",
+        price : "$5.75",
+        imageName : "caramel_macchiato.jpg",
+        type : "hot",
+        desc : "Freshly brewed espresso topped with steamed full-fat milk and drizzeled with deliciously warm caramel syrup and whipped cream"
+    },
+    {
+        name : "Almond Croissant",
+        price : "$6.50",
+        imageName : "almond_croissant.jpeg",
+        type : "bakery",
+        desc : "Yummy crossaint filled and drizzeled with chopped almonds, powdered sugar, and chocolate syrup"
+    },
+    {
+        name : "Butter Croissant",
+        price : "$5.99",
+        imageName : "butter_croissant.jpg",
+        type : "bakery",
+        desc : "Buttery-soft flaky crossaint straight out of the oven and brushed with full-fat grass-fed cow-milk butter"
+    },
+    {
+        name : "Cheese Danish",
+        price : "$6.35",
+        imageName : "cheese_danish.jpg",
+        type : "bakery",
+        desc : "Baked with yummy cheese goodness and topped with handpicked blueberries"
+    },
+    {
+        name : "Cinnamon Roll",
+        price : "$7.25",
+        imageName : "cinnamon_roll.jpg",
+        type : "bakery",
+        desc : "Soft and gooey cinnamon roll with warm cream cheese frosting"
+    },
 ]
 
 const menuDiv = $('#menu');
@@ -53,7 +116,7 @@ function filterMenu(type) {
  */
 function fillMenu(item) {
     menuDiv.append(
-        `<div class="col-sm-12 col-xl-6 menu-item mt-4" id="${item.type}">
+        `<div class="col-sm-12 col-xl-6 menu-item pr-4 pl-4 mt-4" id="${item.type}">
             <div class="row menu_item_inner">
                 <div class="col-sm-12 col-md-5 mb-3 item-img" style="background-image: url(image/${item.imageName})"></div>
                 <div class="col-sm-12 col-md-7 item-info">
